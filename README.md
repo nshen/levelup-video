@@ -1,66 +1,8 @@
-## Foundry
+## Level Up
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+levelup.xyz 的视频教程
 
-Foundry consists of:
+升级你的 Web 3 技能, 跟我一起学 Solidity
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+- [Bilibili](https://space.bilibili.com/407827717)
+- [Youtube](https://www.youtube.com/playlist?list=PLQVdFP10UFttpwQFP3j-0kULb8gAdYfWl)
