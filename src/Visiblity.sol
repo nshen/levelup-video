@@ -36,30 +36,45 @@ contract BaseContract {
     // bool external isTrue4 = true;
 
     // External function
-    // Can be called from other contracts and via transactions
-    // Cannot be called internally
+    // - by other contracts and accounts
     function externalFunc() external pure returns (string memory) {
         return "External function called";
     }
 
+    // This function will not compile since we're trying to call
+    // an external function here.
+    // function testExternalFunc() public pure returns (string memory) {
+    //     return externalFunc();
+    // }
+
     // Public function
-    // Can be called internally or via message calls
+    // - inside this contract
+    // - inside derived contracts
+    // - by other contracts and accounts
     function publicFunc() public pure returns (string memory) {
         return "Public function called";
     }
 
     // Internal function
-    // Can only be accessed from within the current contract or contracts deriving from it
-    // Cannot be accessed externally
+    // - inside this contract
+    // - inside derived contracts
     function internalFunc() internal pure returns (string memory) {
         return "Internal function called";
     }
 
+    function testInternalFunc() public pure virtual returns (string memory) {
+        return internalFunc();
+    }
+
     // Private function
-    // Can only be accessed from within the current contract
+    // - inside this contract
     // Cannot be accessed from derived contracts or externally
     function privateFunc() private pure returns (string memory) {
         return "Private function called";
+    }
+
+    function testPrivateFunc() public pure returns (string memory) {
+        return privateFunc();
     }
 
     function testFuncs() public view returns (string memory, string memory) {
@@ -72,7 +87,7 @@ contract BaseContract {
 contract DerivedContract is BaseContract {
     function callBaseFuncs()
         public
-        view
+        pure
         returns (string memory, string memory)
     {
         // Can call the public and internal functions of the base contract

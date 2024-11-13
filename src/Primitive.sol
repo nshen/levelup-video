@@ -5,7 +5,9 @@ contract Primitives {
     bool public boo = true;
 
     /*
-    uint stands for unsigned integer, meaning non negative integers different sizes are available
+    uint stands for unsigned integer, meaning non negative integers 
+
+    different sizes are available:
 
         uint8   ranges from 0 to 2 ** 8 - 1
         uint16  ranges from 0 to 2 ** 16 - 1
@@ -18,6 +20,7 @@ contract Primitives {
     uint256 public u = 123; // uint is an alias for uint256
 
     /*
+
     Negative numbers are allowed for int types.
     Like uint, different ranges are available from int8 to int256
 
@@ -35,6 +38,19 @@ contract Primitives {
 
     address public addr = 0xCA35b7d915458EF540aDe6068dFe2F44E8fa733c;
 
+    /*
+
+    In Solidity, the data type byte represent a sequence of bytes. 
+    Solidity presents two type of bytes types :
+
+     - fixed-sized byte arrays
+     - dynamically-sized byte arrays.
+     
+     The term bytes in Solidity represents a dynamic array of bytes. 
+     It’s a shorthand for byte[] .
+
+    */
+
     // Declare a fixed-size byte array
     bytes1 a = 0xb5; // [10110101]
     bytes1 b = 0x56; // [01010110]
@@ -43,7 +59,8 @@ contract Primitives {
     bytes10 d = 0x68656c6c6f776f726c64; // "helloworld" in hexadecimal
 
     // Declare a bytes32 array
-    bytes32 e = 0x68656c6c6f776f726c6420202020202020202020202020202020202020202020; // "helloworld" padded with spaces in hexadecimal
+    bytes32 e =
+        0x68656c6c6f776f726c6420202020202020202020202020202020202020202020; // "helloworld" padded with spaces in hexadecimal
 
     // Declare a dynamically-sized byte array
     bytes public c = "Hello, world!";

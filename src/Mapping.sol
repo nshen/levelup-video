@@ -1,6 +1,16 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.24;
 
+/*
+
+The keyType can be any built-in value type, bytes, string, or any contract.
+
+valueType can be any type including another mapping or an array.
+
+Mappings are not iterable.
+
+*/
+
 contract Mapping {
     // Mapping from address to uint
     mapping(address => uint256) public myMap;
