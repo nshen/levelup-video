@@ -27,7 +27,7 @@ levelup.xyz 的 Solidity 视频教程
 | [Loops.sol](./src/Loops.sol)                     | [播放](https://www.bilibili.com/video/BV1WomHYcEBT/) | [播放](https://www.youtube.com/watch?v=3p-VC5RY840) |
 | [Constructor.sol](./src/Constructor.sol)         | [播放](https://www.bilibili.com/video/BV1jxmhYVESZ/) | [播放](https://www.youtube.com/watch?v=m2ZV4-Gm1CQ) |
 | [DataLocation.sol](./src/DataLocations.sol)      | [播放](https://www.bilibili.com/video/BV1tGUuYiEvA/) | [播放](https://www.youtube.com/watch?v=hmWphHHyZKw) |
-| [TryCatch.sol](./src/TryCatch.sol)               | [播放](https://www.bilibili.com/video/BV1tGUuYiEvA/) | [播放](https://www.youtube.com/watch?v=hmWphHHyZKw) |
+| [TryCatch.sol](./src/TryCatch.sol)               | [播放](https://www.bilibili.com/video/BV15HmfYSEQo/) | [播放](https://www.youtube.com/watch?v=vaINSMSGGMk) |
 
 ### TODO
 
